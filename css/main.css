@@ -2,10 +2,31 @@
 
 * {margin: 0; padding: 0;}
 li {list-style: none;}
-a {text-decoration: none; color: #333;}
+a {text-decoration: none; color: #F5F2E7;}
 html, body {
-    color: #333;
+    color: #F5F2E7;
     min-width: 1280px;
+    font-family: 'S-CoreDream-4Regular';
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'S-CoreDream-4Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* header */
@@ -18,12 +39,17 @@ header div {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    /* background-color: #F5F2E7; */
 }
 header div h1 a {
     font-size: 25px;
+    font-family: 'S-CoreDream-4Regular';
+    color: #2c3333;
 }
 header div a {
     font-size: 20px;
+    font-family: 'S-CoreDream-4Regular';
+    color: #2c3333;
 }
 
 /* .main_visual */
@@ -53,7 +79,7 @@ header div a {
     top: 0;
     transform: translateX(-50%);
     /* 변형 : 이동x축 -> 본인이 가진 너비의 반만큼 역으로 이동 */
-    color: #fff;
+    color: #F5F2E7;
 
     display: flex;
     flex-wrap: wrap;
@@ -62,25 +88,31 @@ header div a {
 .main_visual .title h2 {
     width: 100%;
     font-size: 60px;
+    font-family: 'S-CoreDream-4Regular';
+    
 }
 .main_visual .title p {
     width: 100%;
     font-size: 30px;
     margin-bottom: 40px;
+    font-family: 'S-CoreDream-4Regular';
 }
 .main_visual .title a {
-    color: #fff;
+    color: #F5F2E7;
     width: 150px;
     height: 50px;
     line-height: 50px;
-    background-color: royalblue;
+    background-color: #2666cf;
     text-align: center;
     border: 0;
+    display: block;
+    font-family: 'S-CoreDream-4Regular';
 }
 
 /* .best_v */
 .best_v {
     padding: 100px 0;
+    background-color: #395B64;
 }
 .best_v .title {
     text-align: center;
@@ -88,9 +120,11 @@ header div a {
 }
 .best_v .title h3 {
     font-size: 40px;
+    font-family: 'S-CoreDream-4Regular';
 }
 .best_v .title p {
     font-size: 20px;
+    font-family: 'S-CoreDream-4Regular';
 }
 .best_v .cont {
     width: 1280px;
@@ -122,6 +156,7 @@ header div a {
 .best_v .cont .info h4 {
     font-size: 30px;
     margin-bottom: 5px;
+    
 }
 .best_v .cont .info p:nth-of-type(2) {
     /* 외부여백 : 위20 아래 40 */
@@ -148,19 +183,20 @@ header div a {
     display: block;
 }
 .best_v .cont .info ul li:nth-child(1) a {
-    background-color: #333;
-    color: #fff;
+    background-color: #2666cf;
+    color: #F5F2E7;
     border: 0;
 }
 .best_v .cont .info ul li:nth-child(2) a {
-    background-color: #333;
-    color: #fff;
+    background-color: #2666cf;
+    color: #F5F2E7;
     border: 0;
 }
 
 /* .motion */
 .motion {
     padding: 100px 0;
+    background-color: #2c3333;
 }
 .motion .title {
     text-align: center;
@@ -182,16 +218,16 @@ header div a {
     /* 마우스모양 : 손모양 */
     height: 45px;
     line-height: 45px;
-    border: 1px solid #ccc;
+    border: 1px solid #F5F2E7;
     padding: 0 30px;
     margin: 0 5px;
     box-sizing: border-box;
 }
 .motion .list li.on{
-    box-shadow: 2px 3px 15px rgba(255, 0, 0, 0.603);
+    box-shadow: 2px 3px 15px #2667cfb1;
     /* 그림자 : x축 y축 블러 색상 */
-    background-color: rgb(255, 50, 50);
-    color: #fff;
+    background-color: #2666cf;
+    color: #F5F2E7;
     border: 0;
 }
 .motion .motion_cont .list_cont {
@@ -206,7 +242,7 @@ header div a {
 }
 .motion .motion_cont .list_cont .items {
     width: 49%;
-    border: 1px solid #ccc;
+    border: 1px solid #F5F2E7;
     box-sizing: border-box;
 }
 /* 유튜브 영상 크기 조절 */
@@ -236,6 +272,7 @@ header div a {
 .motion .list_cont .items .info dl {
     display: flex;
     margin-top: 10px;
+    
 }
 .motion .list_cont .items .info dl dt {
     width: 20%;
@@ -247,7 +284,7 @@ header div a {
 
 /* .g_ver05 */
 .g_ver05 {
-    background-color: #eee;
+    background-color: #395B64;
     padding: 100px 0;
 }
 .g_ver05 .title {
@@ -276,7 +313,7 @@ header div a {
 }
 .g_ver05 .cont .items {
     width: 49%;
-    background-color: beige;
+    background-color: #2c3333;
     display: flex;
 
     align-items: center;
@@ -307,6 +344,7 @@ header div a {
 /* .about */
 .about {
     padding: 100px 0;
+    background-color: #2c3333;
 
 }
 .about .cont {
@@ -350,31 +388,32 @@ header div a {
 }
 .about .cont .info div dl dd {
     font-size: 20px;
+    
 }
 
 footer {
-    background-color: #333;
+    background-color: #395B64;
     text-align: center;
-    color: #fff;
-    
+    color: #F5F2E7;
+    padding: 100px 0;
 }
 footer ul li {
     width: 280px;
     height: 50px;
     line-height: 50px;
     text-align: center;
-    border: 1px solid #fff;
+    border: 1px solid #F5F2E7;
     border-radius: 50px;
     margin: 10px auto;
 }
-footer ul li a {color: #fff;}
+footer ul li a {color: #F5F2E7;}
 
 footer ul li:first-child {
-    background-color: royalblue;
+    background-color: #2666cf;
     font-weight: bold;
 }
 footer ul li:first-child a {
-    color: #eee;
+    color: #F5F2E7;
 }
 footer p {
     margin-top: 20px;
