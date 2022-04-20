@@ -59,6 +59,7 @@ header div a {
    height: calc(100vh - 80px);
    /* 높이 : 브라우저 전체높이 - 헤더값 */
    position: relative;
+   
 }
 .main_visual figure {
     width: 100%;
@@ -71,7 +72,7 @@ header div a {
 }
 .main_visual .title {
     width: 1280px;
-    /* background-color: antiquewhite; */
+    /* background-image: url('../images/denim_texture_01.jpg'); */
     /* margin: 0 auto; */
     height: 100%;
     position: absolute;
@@ -113,6 +114,7 @@ header div a {
 .best_v {
     padding: 100px 0;
     background-color: #395B64;
+    
 }
 .best_v .title {
     text-align: center;
