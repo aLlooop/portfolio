@@ -486,6 +486,12 @@ footer p {
 }/* 해상도 960px 이하 */
 
 @media screen and (max-width:640px) {
+    body {
+        overflow-x: hidden;
+    }
+    .best_v .cont .info p:nth-of-type(2) {
+        margin: 10px 0 20px;
+    }
     section .title h3 {
         font-size: 30px !important;
     }
@@ -501,6 +507,15 @@ footer p {
     }
     .main_visual .title p {
         font-size: 15px;
+    }
+    .motion .list li {
+        cursor: pointer;
+        height: 45px;
+        line-height: 45px;
+        border: 1px solid #F5F2E7;
+        padding: 0 10px;
+        margin: 0 5px;
+        box-sizing: border-box;
     }
     .motion .list_cont .items .info {
         padding: 15px;
