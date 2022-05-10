@@ -9,6 +9,7 @@ html, body {
     font-family: 'S-CoreDream-4Regular';
 }
 
+
 @font-face {
     font-family: 'NanumBarunGothic';
     font-style: normal;
@@ -28,6 +29,23 @@ html, body {
     font-weight: normal;
     font-style: normal;
 }
+@keyframes flicker {
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+      text-shadow: 0 0 2px #F5F2E7, 0 0 4px #F5F2E7, 0 0 6px #F5F2E7, 0 0 12px rgba(51,70,105,1);
+        
+    }
+    20%,
+    24%,
+    55% {
+      text-shadow: /* none; */ 0 0 4px #fff, 0 0 6px #fff, 0 0 25px #fff, 0 0 50px rgba(201,159,169,1);
+    }
+  }
 
 /* header */
 header {
@@ -64,6 +82,8 @@ header div a {
 .main_visual figure {
     width: 100%;
     height: 100%;
+    background: rgb(201,159,169);
+    background: linear-gradient(135deg, rgba(201,159,169,1) 0%, rgba(51,70,105,1) 100%);
 }
 .main_visual figure img {
     width: 100%;
@@ -72,7 +92,8 @@ header div a {
 }
 .main_visual .title {
     width: 1280px;
-    /* background-image: url('../images/denim_texture_01.jpg'); */
+    /* background: rgb(201,159,169);
+    background: linear-gradient(90deg, rgba(201,159,169,1) 0%, rgba(51,70,105,1) 100%); */
     /* margin: 0 auto; */
     height: 100%;
     position: absolute;
@@ -85,11 +106,15 @@ header div a {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+   
+    /* animation: flicker 1s ease-in-out infinite alternate; */
 }
 .main_visual .title h2 {
     width: 100%;
     font-size: 60px;
     font-family: 'S-CoreDream-4Regular';
+
+    /* animation: flicker 1s ease-in-out infinite alternate; */
     
 }
 .main_visual .title p {
@@ -97,6 +122,8 @@ header div a {
     font-size: 30px;
     margin-bottom: 40px;
     font-family: 'S-CoreDream-4Regular';
+
+    /* animation: flicker 1s ease-in-out infinite alternate; */
 }
 .main_visual .title a {
     color: #F5F2E7;
@@ -113,7 +140,9 @@ header div a {
 /* .best_v */
 .best_v {
     padding: 100px 0;
-    background-color: #395B64;
+    /* background-color: #395B64; */
+    background: rgb(201,159,169);
+    background: linear-gradient(45deg, rgba(201,159,169,1) 0%, rgba(51,70,105,1) 100%);
     
 }
 .best_v .title {
@@ -220,7 +249,7 @@ header div a {
     /* 마우스모양 : 손모양 */
     height: 45px;
     line-height: 45px;
-    border: 1px solid #F5F2E7;
+    border: 1px solid #f5f2e79a;
     padding: 0 30px;
     margin: 0 5px;
     box-sizing: border-box;
@@ -229,7 +258,7 @@ header div a {
     box-shadow: 2px 3px 15px #2667cfb1;
     /* 그림자 : x축 y축 블러 색상 */
     background-color: #2666cf;
-    color: #F5F2E7;
+    color: #f5f2e79d;
     border: 0;
 }
 .motion .motion_cont .list_cont {
@@ -244,7 +273,7 @@ header div a {
 }
 .motion .motion_cont .list_cont .items {
     width: 49%;
-    border: 1px solid #F5F2E7;
+    border: 1px solid #f5f2e7a9;
     box-sizing: border-box;
 }
 /* 유튜브 영상 크기 조절 */
@@ -356,7 +385,7 @@ header div a {
     align-items: center;
     justify-content: space-between;
 }
-.about .cont figure {
+/* .about .cont figure {
     width: 30%;
     height: 500px;
 }
@@ -364,12 +393,13 @@ header div a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 .about .cont .info {
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    
+    
 }
 .about .cont .info div {
     width: 45%;
@@ -404,7 +434,7 @@ footer ul li {
     height: 50px;
     line-height: 50px;
     text-align: center;
-    border: 1px solid #F5F2E7;
+    border: 1px solid #f5f2e7a8;
     border-radius: 50px;
     margin: 10px auto;
 }
@@ -489,6 +519,7 @@ footer p {
     body {
         overflow-x: hidden;
     }
+    
     .best_v .cont .info p:nth-of-type(2) {
         margin: 10px 0 20px;
     }
@@ -504,18 +535,26 @@ footer p {
 
     .main_visual .title h2 {
         font-size: 30px;
+        margin-left: 15px;
     }
     .main_visual .title p {
+        margin-top: 15px;
+        margin-left: 15px;
         font-size: 15px;
+    }
+    .main_visual .title a {
+        margin-left: 15px;
+        width: 90%;
     }
     .motion .list li {
         cursor: pointer;
         height: 45px;
         line-height: 45px;
         border: 1px solid #F5F2E7;
-        padding: 0 10px;
-        margin: 0 5px;
+        padding: 0 3px;
+        margin: 0 3px;
         box-sizing: border-box;
+        
     }
     .motion .list_cont .items .info {
         padding: 15px;
@@ -532,6 +571,13 @@ footer p {
     }
     .g_ver05 .cont .items figure {
         height: 300px;
+    }
+    .g_ver05 .title em {
+        font-size: 10px;
+        text-align: right;
+        margin: 40px 0 5px 10px;
+        display: block;
+        
     }
     .about .cont .info div h4 {margin-bottom: 10px;}
     .about .cont .info div p {font-size: 16px;}
